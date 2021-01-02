@@ -1,0 +1,437 @@
+@media only screen and (max-width: 600px){
+
+#spacer {
+  height: 1em;
+  position:relative;
+}
+
+#CoverCourier {
+  position: absolute;
+  object-fit: cover;
+  width: 150%;
+  height: 40em;
+  left: -50%;
+  top: 0px;
+  z-index: -1;
+}
+
+.header{
+  display: flex;
+  width: auto;
+  height: 7em;
+  background-size: auto;
+  align-items: center;
+  font-family: FuturaPTDemi;
+  font-size: 10px;
+}
+
+img{
+  display: inline-flex;
+  height: 16em;
+  width: auto;
+  align-items: center;
+}
+
+nav{
+  width: 100%;
+  padding: 2em;
+  padding-left: 0;
+}
+
+nav li{
+  display: none;
+  padding: 1em;
+  color: #7F7F7F;
+  font-size: 18px;
+  font-family: FuturaPTBook;
+}
+
+#login{
+  display: inline-flex;
+  float: right;
+}
+
+nav li2{
+  display: inline-flex;
+  clear: left;
+  float: right;
+  margin-left: 10px;
+  padding:.8em;
+  border-style: solid;
+  border-width: thin;
+  border-radius: .25em;
+  border-color: #80B950;
+  color: #80B950;
+}
+
+#Motto{
+  padding: 1em;
+  padding-top: 14em;
+  font-family: FuturaPTExtraBold;
+  font-size: 24px;
+  color: white;
+  display: none;
+}
+
+#Motto2{
+  padding: 1em;
+  padding-top: 10em;
+  font-family: FuturaPTExtraBold;
+  font-size: 20px;
+  color: white;
+  display: none;
+}
+
+fieldset{
+  border: none;
+  display: inline;
+}
+
+label{
+  display: inline;
+  text-align: center;
+  margin-top:.5em;
+  width: 5em;
+  padding:.5em;
+  margin-left: 1em;
+  float: left;
+  font-family: FuturaPTBold;
+  font-size: 1em;
+  color: white;
+  background-color: #80B950;
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+}
+
+input{
+  width: 15em;
+  margin-top: .5em;
+  padding: .5em;
+  float: left;
+  font-family: FuturaPTMedium;
+  font-size:1em;
+  color: #80B950;
+  border-top-right-radius: .5em;
+  border-bottom-right-radius: .5em;
+  border-style: none;
+  border-color: white;
+}
+
+button{
+  margin-top: 1em;
+  text-align: center;
+  width: 7em;
+  padding:.5em;
+  margin-left: 1em;
+  float: left;
+  font-family: FuturaPTBold;
+  font-size: 1em;
+  color: white;
+  background-color: #7F7F7F;
+  border-color: white;
+  border-radius:.5em;
+  border-style: none;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #9F9F9F;
+  color: white;
+  cursor: pointer;
+}
+
+button.active{
+  background-color: #80B950;
+  cursor:not-allowed;
+}
+
+button:focus{
+  outline: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+#agirlikNumara, #uzunlukNumara, #enNumara, #yukseklikNumara{
+  width: 6em;
+  margin-left: 1em;
+  padding: .5em;
+  float: left;
+  font-family: FuturaPTMedium;
+  font-size:1em;
+  color: #80B950;
+  border-radius: .5em;
+  border-style: none;
+  border-color: white;
+}
+
+button2{
+  text-align: center;
+  width: 5em;
+  padding:.5em;
+  margin-left: 1em;
+  float: left;
+  font-family: FuturaPTBold;
+  font-size: 1em;
+  color: white;
+  background-color: #7F7F7F;
+  border-color: white;
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+  border-style: none;
+  transition-duration: 0.4s;
+}
+
+button2:hover{
+  background-color: #9F9F9F;
+  color: white;
+  cursor: pointer;
+}
+
+b{
+  padding: .5em;
+  font-family: FuturaPTBold;
+  font-size: 25px;
+  color: white;
+}
+
+.taglines{
+  width: 36%;
+  padding: .5em;
+  margin-left: 2em;
+  margin-top: 0em;
+  display: inline-block;
+  color: #80B950;
+}
+
+.taglines li{
+  display: inline;
+  margin: auto;
+  list-style: none;
+  margin-top: 2.5em;
+  font-family: FuturaPTBold;
+  font-size: .8em;
+  color: #80B950;
+}
+
+.taglines li2{
+  display: inline;
+  list-style: none;
+  margin-top: 2.5em;
+  margin-left: 2em;
+  font-family: FuturaPTLight;
+  color: #80B950;
+  text-align: right;
+}
+
+.taglines p{
+  font-size: .3em;
+  float: left;
+  list-style: none;
+  font-family: FuturaPTMedium;
+  color: #80B950;
+}
+
+.cardcontainer{
+  margin-top: 5em;
+  display: flex;
+  padding-left: 2em;
+  padding-right: 2em;
+  display: none;
+}
+
+.card{
+  border-style:solid;
+  box-shadow: 3px 3px 5px #7F7F7F;
+  border-radius: .5em;
+  border-color: #80B950;
+  width: 20em;
+  padding: 2em;
+  margin: 2em;
+  text-align: center;
+}
+
+.card li{
+  font-family: FuturaPTBold;
+  color: #80B950;
+  list-style: none;
+  font-size: 25px;
+  padding-bottom: .5em;
+}
+
+.card li2{
+  font-family: FuturaPTMedium;
+  color: #7F7F7F;
+  text-align: center;
+  font-size: 18px;
+}
+
+.companybreakdown1{
+  padding: 2em;
+  padding-top: 6em;
+  width: auto;
+  display: block;
+  float: left;
+  clear: right;
+  max-width: 100%;
+}
+
+.companybreakdown2{
+  padding: 2em;
+  padding-top: 2em;
+  width: auto;
+  display: block;
+  float: left;
+  clear: right;
+  max-width: 100%;
+}
+
+.companybreakdown3{
+  padding: 2em;
+  padding-top: 2em;
+  width: auto;
+  display: block;
+  float: left;
+  clear: right;
+  max-width: 100%;
+}
+
+.footer{
+  display: flex;
+  margin-top: 3em;
+  width: auto;
+  height: 6em;
+  align-items: center;
+  font-family: FuturaPTDemi;
+  font-size: 15px;
+  background-color: #80B950;
+}
+
+#ecotech{
+  padding-left: 1em;
+  height: 15em;
+  width: auto;
+  overflow:visible;
+  margin-top: -9em;
+  margin-bottom: -8em;
+  margin-left: -3.5em;
+}
+
+#econcept{
+  padding-left: 1.5em;
+  height: 15em;
+  width: auto;
+  overflow:visible;
+  margin-top: -9em;
+  margin-bottom: -8em;
+  margin-left: -3.5em;
+}
+
+#ecofleet{
+  padding-left: 1em;
+  height: 15em;
+  width: auto;
+  overflow:visible;
+  margin-top: -9em;
+  margin-bottom: -8em;
+  margin-left: -3.5em;
+}
+
+p{
+  font-family: FuturaPTBold;
+  color: #80B950;
+  font-size: 15px;
+  width: auto;
+  padding-top: 1.5em;
+}
+
+p2{
+  font-family: FuturaPTDemi;
+  color: #80B950;
+  font-size: 10px;
+  line-height: 1px;
+}
+
+#image1{
+  display: inline-flex;
+  float: left;
+  padding-top: 1em;
+  padding-right: 0;
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+#image2{
+  display: inline-flex;
+  float: left;
+  padding-top: 1em;
+  padding-left: 0;
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+#image3{
+  display: inline-flex;
+  float: left;
+  padding-top: 1em;
+  padding-right: 0;
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+#endingtagline{
+  display: inline-block;
+  padding-top: 1.5em;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  width: 100%;
+  font-family: FuturaPTExtraBold;
+  font-size: 30px;
+  color: #80B950;
+}
+
+#return{
+  display: inline;
+  background-color: grey;
+  height: 6em;
+  width: 100%;
+  margin-right: 0 !important;
+  text-align: center;
+}
+
+#returnarrow{
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 40%;
+}
+
+#footerlogo{
+  height: 6em;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  object-fit:cover;
+  display: none;
+}
+
+nav2{
+  width: auto;
+  padding-left: 1em;
+  display: inline-flex;
+  align-items: center;
+  display: none;
+}
+nav2 li2{
+  font-family: FuturaPTDemi;
+  font-size: 14px;
+  color: white;
+  padding-right: 9em;
+}
+}

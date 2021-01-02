@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<link href="Ecourier Front-End.css" rel="stylesheet" type="text/css">
+<link href="Ecourier Front-End Mobile.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="Pricing Tool.js"></script>
+<title>Ecourier</title>
+</head>
+<body>
+
+<img id = "CoverCourier" src="CoverCourier.jpg" alt="">
+
+<div class = header>
+  <img id = "EcourierLogo" src="EcourierLogo.png" alt="Logo">
+  <nav>
+    <li>Kurumsal</li>
+    <li>Hismetlerimi</li>
+    <li>Gonderi takibi</li>
+    <li>Iletisim</li>
+    <div id = login>
+      <li2>UYE GIRISI</li2>
+      <li2>UYE OL</li2>
+    </div>
+  </nav>
+</div>
+
+<div id = "Motto">ECOURIER ISTANBUL SEHIRICI
+<br> KURYECILIGIN "YENI NEFESI" </div>
+
+<fieldset>
+    <label for="gonderici">Gonderici:</label>
+    <input type="text" id="gonderici" name="gonderici">
+    <label for="alici">Alici:</label>
+    <input type="text" id="alici" name="alici">
+</fieldset>
+<fieldset>
+    <label for="Adres1">Adres:</label>
+    <input type="text" id="adres1" name="adres1">
+    <label for="Adres2">Adres:</label>
+    <input type="text" id="adres2" name="adres2">
+</fieldset>
+
+<br>
+<br>
+
+<fieldset>
+    <button> Zarf </button>
+    <button> Paket </button>
+    <button> Dokuman </button>
+    <button> Palet </button>
+</fieldset>
+<fieldset>
+    <input type="number" id="agirlikNumara" name="agirlikNumara" placeholder="Agirlik (kg)">
+    <input type="number" id="uzunlukNumara" name="uzunlukNumara" placeholder="Uzunluk (cm)">
+    <input type="number" id="enNumara" name="enNumara" placeholder="En (cm)">
+    <input type="number" id="yukseklikNumara" name="yukseklikNumara" placeholder="Yukseklik (cm)">
+</fieldset>
+
+<br>
+<br>
+
+<fieldset>
+        <button2 name="button2" type="button" onclick="calculatePrice()">Fiyat Al</button2>
+        <input type="text"  name="orderTotal" id="orderTotal" Size=6 placeholder="Toplam" style="margin-top:0;"readonly>
+        <b>YTL</b>
+</fieldset>
+
+<div id = "Motto2">ECOURIER ISTANBUL SEHIRICI
+<br> KURYECILIGIN "YENI NEFESI" </div>
+
+<div class = taglines>
+  <li> SENIN YENI <br> NESIL KURIYE
+    <li2> + </li2>
+    <br>
+    <p> Postaları önceden ayarladık, <br> postaneyi ziyaret ettik ya da yıllar önce postacıyı kaçırdık.</p>
+  </li>
+</div>
+
+<div class = taglines>
+  <li> SENIN YENİ <br> YAŞ ÇÖZÜMÜ
+    <li2> + </li2>
+    <br>
+    <p>Biz tüketici ve çevre için uygun <br> talep üzerine yeni bir yaş teslimat öncülerindeyiz.</p>
+  </li>
+</div>
+
+<div class = cardcontainer>
+<div class = card>
+  <li> Teslim alma ve bırakma konumlarını seçin </li>
+  <li2>
+Bir harita çekin ve bunun yerine bir raptiye bırakın <br> adresin elle girilmesi.</li2>
+</div>
+<div class = card>
+  <li> Gönderen ve alıcı ayrıntılarını girin </li>
+  <li2>
+Bilgilerinizi ve ayrıntılarınızı iki kez kontrol edin
+ <br> en iyi hizmeti almanızı sağlamak için. </li2>
+</div>
+<div class = card>
+  <li> Teklifinizi alın ve siparişinizi verin </li>
+  <li2> Siz hazır olduğunuzda biz de hazırız. </li2>
+</div>
+</div>
+
+<div class = companybreakdown1>
+
+<img id = "ecotech" src="Ecotech.png" alt="Logo">
+<p> Bir teslimat ortağıyla fark yaratın <br> bir değişime ilham verebilir.</p>
+<p2>
+Ecourier'in arkasındaki teknoloji, destek ve bilgi birikimi ile oluşturuldu dünya çapında
+  <br> tanınan bir Fortune 5 şirketinin.
+  <br> Sonuç olarak, sistemlerimiz yeni en son teknoloji ile sürekli olarak güncellenir.
+  <br><br>
+  Teknolojimiz siparişler için ışık hızında işlemeye izin verir, teslim alma ve teslimat, müşteri anında
+  <br> siparişi masaüstü platformu aracılığıyla oluşturur veya uygulama sistemde görünür.
+  <br><br>
+  Yeşil olmanın kolay olmadığını kim söyledi?
+  <br> Farklılık için yalvarıyoruz.
+</p2>
+
+</div>
+
+
+
+<img id = "image1" src="Scootercouple.png" alt="Logo">
+
+
+
+<div class = companybreakdown2>
+
+<img id = "econcept" src="Econcept.png" alt="Logo">
+<p>
+Tamamen elektronik, her zaman çevre dostu. &nbsp &nbsp &nbsp <br> Yarım ölçü yok. </p>
+<p2> Çevresel sürdürülebilirliğe ulaşmak, yarı önlemlerle gerçekleştirilebilecek bir görev değil,
+  <br> bu yüzden biz “0” karbon ayak izi çözümlerimizi her zaman korumaya kararlıyız.
+  <br><br>
+Sevgiyle "eko filo" olarak adlandırdığımız tüm EV filomuzun ötesinde,
+  <br> paketleme malzemelerimiz geri dönüştürülmüş ve FSC sertifikalı kağıt kullanılarak üretilmiştir.
+  <br>
+  <br>
+Kurye çantalarımız, değiştirilebilir yapışkan arkalık dahil% 100 geri dönüştürülmüş malzemeden
+  <br> yapılmıştır. irsaliye etiketlerimiz% 100 şeker kamışı küspesinden yapılmaktadır.
+</p2>
+
+</div>
+
+
+
+<img id = "image2" src="ScooterSunset.png" alt="Logo">
+
+
+
+<div class = companybreakdown3>
+
+<img id = "ecofleet" src="Ecofleet.png" alt="Logo">
+<p>
+Beş farklı hizmet seviyesi <br> sunmak dört sektörde. </p>
+<p2> İspanyol bir elektrikli araç üreticisi olan Silence ™ ile ortak olan eko filomuz, reçeteli ilaçlardan taze gıda
+  <br> ve sebzelere kadar çok sayıda ürün belgeler ve çeşitli ürünler gibi hepimizin beklediği genel çıktılar.
+  <br><br>
+  Bu endüstrilerin her birinde, standarttan geniş bir müşteri yelpazesine uyacak beş hizmet
+  <br> seviyesi sunuyoruz teslimat sürenizi önemli ölçüde hızlandıran seçeneklere aşina olduğunuz
+  <br> teslimat süresi acil durumlar. Basitçe söylemek gerekirse, hayat teslim ediyoruz.
+</p2>
+
+</div>
+
+
+
+<img id = "image3" src="silentscooter.png" alt="Logo">
+
+
+<div id = "endingtagline">
+  DÜNYAYI DEĞİŞTİRELİM
+  <br>
+  BİR DEFA TEK TESLİMAT
+</div>
+
+<div class = footer>
+
+  <img id = "footerlogo" src="Ecourierwithlink.png">
+
+  <nav2>
+    <li2>Kurumsal</li2>
+    <li2>Hismetlerimi</li2>
+    <li2>Gonderi takibi</li2>
+    <li2>Iletisim</li2>
+
+  </nav2>
+
+  <div id = "return">
+    <a href="#top"> <img id = "returnarrow" src="Arrow.png"> </a>
+  </div>
+
+</div>
+
+</body>
+</html>

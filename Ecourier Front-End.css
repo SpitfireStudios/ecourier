@@ -1,0 +1,863 @@
+
+@font-face {
+    font-family: 'FuturaPTMedium';
+    src: url(FuturaPTMedium.otf) format("opentype");
+}
+@font-face {
+    font-family: 'FuturaPTBook';
+    src: url(FuturaPTBook.otf) format("opentype");
+}
+@font-face {
+    font-family: 'FuturaPTLight';
+    src: url(FuturaPTLight.otf) format("opentype");
+}
+@font-face {
+    font-family: 'FuturaPTBold';
+    src: url(FuturaPTBold.otf) format("opentype");
+}
+@font-face {
+    font-family: 'FuturaPTDemi';
+    src: url(FuturaPTDemi.otf) format("opentype");
+}
+@font-face {
+    font-family: 'FuturaPTExtraBold';
+    src: url(FuturaPTExtraBold.otf) format("opentype");
+}
+@font-face {
+    font-family: 'FuturaPTHeavy';
+    src: url(FuturaPTHeavy.otf) format("opentype");
+}
+
+body{
+  margin: 0;
+}
+
+/* REMOVE THIS ONCE THE PRICING IS READY!!!*/
+
+#spacer {
+  height: 13em;
+  position:relative;
+}
+
+#CoverCourier {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.header{
+  display: flex;
+  width: auto;
+  height: 8em;
+  background-size: auto;
+  align-items: center;
+  font-family: FuturaPTDemi;
+  font-size: 15px;
+}
+
+img{
+  display: inline-flex;
+  height: 25em;
+  width: auto;
+  align-items: center;
+}
+
+nav{
+  width: 100%;
+  padding: 2em;
+  padding-left: 0;
+}
+
+nav li{
+  display: inline-flex;
+  padding: 1em;
+  color: #7F7F7F;
+  font-size: 18px;
+  font-family: FuturaPTBook;
+}
+
+#login{
+  display: inline-flex;
+  float: right;
+}
+
+nav li2{
+  display: inline-flex;
+  clear: left;
+  float: right;
+  margin-left: 10px;
+  padding:1em;
+  border-style: solid;
+  border-width: thin;
+  border-radius: .25em;
+  border-color: #80B950;
+  color: #80B950;
+}
+
+#Motto{
+  padding: 1em;
+  padding-top: 2.5em;
+  font-family: FuturaPTExtraBold;
+  font-size: 54px;
+  color: white;
+}
+
+#Motto2{
+  padding: 1em;
+  padding-top: 2.5em;
+  font-family: FuturaPTExtraBold;
+  font-size: 54px;
+  color: white;
+  display: none;
+}
+
+fieldset{
+  border: none;
+}
+
+label{
+  text-align: center;
+  width: 5em;
+  padding:.5em;
+  margin-left: 4em;
+  float: left;
+  font-family: FuturaPTBold;
+  font-size: 1em;
+  color: white;
+  background-color: #80B950;
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+}
+
+input{
+  width: 15em;
+  padding: .5em;
+  float: left;
+  font-family: FuturaPTMedium;
+  font-size:1em;
+  color: #80B950;
+  border-top-right-radius: .5em;
+  border-bottom-right-radius: .5em;
+  border-style: none;
+  border-color: white;
+}
+
+button{
+  text-align: center;
+  width: 7em;
+  padding:.5em;
+  margin-left: 5.60em;
+  float: left;
+  font-family: FuturaPTBold;
+  font-size: 1em;
+  color: white;
+  background-color: #7F7F7F;
+  border-color: white;
+  border-radius:.5em;
+  border-style: none;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #9F9F9F;
+  color: white;
+  cursor: pointer;
+}
+
+button.active{
+  background-color: #80B950;
+  cursor:not-allowed;
+}
+
+button:focus{
+  outline: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+#agirlikNumara, #uzunlukNumara, #enNumara, #yukseklikNumara{
+  width: 6em;
+  margin-left: 5.60em;
+  padding: .5em;
+  float: left;
+  font-family: FuturaPTMedium;
+  font-size:1em;
+  color: #80B950;
+  border-radius: .5em;
+  border-style: none;
+  border-color: white;
+}
+
+button2{
+  text-align: center;
+  width: 5em;
+  padding:.5em;
+  margin-left: 4em;
+  float: left;
+  font-family: FuturaPTBold;
+  font-size: 1em;
+  color: white;
+  background-color: #7F7F7F;
+  border-color: white;
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+  border-style: none;
+  transition-duration: 0.4s;
+}
+
+button2:hover{
+  background-color: #9F9F9F;
+  color: white;
+  cursor: pointer;
+}
+
+b{
+  padding: .5em;
+  font-family: FuturaPTBold;
+  font-size: 25px;
+  color: white;
+}
+
+.taglines{
+  margin-left: 19em;
+  margin-top: 10em;
+  display: inline-block;
+}
+
+.taglines li{
+  display: inline;
+  margin: auto;
+  list-style: none;
+  margin-top: 2.5em;
+  font-family: FuturaPTBold;
+  font-size: 3em;
+  color: white;
+}
+
+.taglines li2{
+  display: inline;
+  list-style: none;
+  margin-top: 2.5em;
+  margin-left: 3em;
+  font-family: FuturaPTLight;
+  color: white;
+  text-align: right;
+}
+
+.taglines p{
+  font-size: .4em;
+  float: left;
+  list-style: none;
+  font-family: FuturaPTMedium;
+  color: white;
+}
+
+.cardcontainer{
+  margin-top: 13em;
+  display:inline-flex;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.card{
+  border-style:solid;
+  box-shadow: 3px 3px 5px #7F7F7F;
+  border-radius: .5em;
+  border-color: #80B950;
+  width: auto;
+  padding: 2em;
+  margin: 2em;
+  text-align: center;
+}
+
+.card li{
+  font-family: FuturaPTBold;
+  color: #80B950;
+  list-style: none;
+  font-size: 41px;
+  padding-bottom: .5em;
+}
+
+.card li2{
+  font-family: FuturaPTMedium;
+  color: #7F7F7F;
+  text-align: center;
+  font-size: 18px;
+}
+
+.companybreakdown1{
+  padding: 4em;
+  padding-top: 8em;
+  padding-right: 0em;
+  display: inline-block;
+  max-width: 50%;
+}
+
+.companybreakdown2{
+  padding-top: 5em;
+  padding-bottom: 3em;
+  float: right;
+  clear: right;
+  max-width: 50%;
+}
+
+.companybreakdown3{
+  float: left;
+  clear: left;
+  padding: 4em;
+  padding-top: 8em;
+  padding-right: 0em;
+  padding-bottom: 3em;
+  max-width: 50%;
+}
+
+.footer{
+  display: flex;
+  margin-top: 8em;
+  width: auto;
+  height: 6em;
+  align-items: center;
+  font-family: FuturaPTDemi;
+  font-size: 15px;
+  background-color: #80B950;
+}
+
+#ecotech{
+  height: 25em;
+  width: auto;
+  overflow:visible;
+  margin-top: -9em;
+  margin-bottom: -12em;
+  margin-left: -4em;
+}
+
+#ecofleet{
+  height: 25em;
+  width: auto;
+  overflow:visible;
+  margin-top: -9em;
+  margin-bottom: -12em;
+  margin-left: -4em;
+}
+
+#econcept{
+  height: 25em;
+  width: auto;
+  overflow:visible;
+  margin-top: -9em;
+  margin-bottom: -12em;
+  margin-left: -4em;
+}
+
+p{
+  font-family: FuturaPTBold;
+  color: #80B950;
+  font-size: 41px;
+  width: auto;
+}
+
+p2{
+  font-family: FuturaPTDemi;
+  color: #80B950;
+  font-size: 20px;
+}
+
+#image1{
+  display: inline-flex;
+  float: right;
+  padding-top: 8em;
+  padding-right: 0;
+  max-width: 50%;
+  height: auto;
+}
+
+#image2{
+  display: inline-flex;
+  float: left;
+  padding-top: 4em;
+  padding-left: 0;
+  max-width: 50%;
+  height: auto;
+}
+
+#image3{
+  display: inline-flex;
+  float: right;
+  clear:right;
+  padding-top: 4em;
+  padding-right: 0;
+  height: auto;
+  max-width: 50%;
+}
+
+#endingtagline{
+  display: inline-block;
+  padding-top: 2em;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  width: 100%;
+  font-family: FuturaPTExtraBold;
+  font-size: 54px;
+  color: #80B950;
+}
+
+#return{
+  display: inline;
+  background-color: grey;
+  height: 6em;
+  width: 20em;
+  margin-right: 0 !important;
+  text-align: center;
+  transition: 4s ease-in-out;
+}
+
+#returnarrow{
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 40%;
+}
+
+#footerlogo{
+  height: 6em;
+  width: 20%;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  object-fit:cover;
+}
+
+nav2{
+  width: 100%;
+  padding-left: 24em;
+  display: inline-flex;
+  align-items: center;
+}
+nav2 li2{
+  font-family: FuturaPTDemi;
+  font-size: 16px;
+  color: white;
+  padding-right: 9em;
+}
+
+
+
+                            @media only screen and (max-width: 1733px){
+                              #spacer {
+                                height: 17em;
+                                position:relative;
+                              }
+
+                              #CoverCourier {
+                                position: absolute;
+                                width: 100%;
+                                height: auto;
+                                left: 0px;
+                                top: 0px;
+                                z-index: -1;
+                              }
+
+                              .header{
+                                display: flex;
+                                width: auto;
+                                height: 8em;
+                                background-size: auto;
+                                align-items: center;
+                                font-family: FuturaPTDemi;
+                                font-size: 15px;
+                              }
+
+                              img{
+                                display: inline-flex;
+                                height: 20em;
+                                width: auto;
+                                align-items: center;
+                              }
+
+                              nav{
+                                width: 100%;
+                                padding: 2em;
+                                padding-left: 0;
+                              }
+
+                              nav li{
+                                display: inline-flex;
+                                padding: 1em;
+                                color: #7F7F7F;
+                                font-size: 18px;
+                                font-family: FuturaPTBook;
+                              }
+
+                              #login{
+                                display: inline-flex;
+                                float: right;
+                              }
+
+                              nav li2{
+                                display: inline-flex;
+                                clear: left;
+                                float: right;
+                                margin-left: 10px;
+                                padding:1em;
+                                border-style: solid;
+                                border-width: thin;
+                                border-radius: .25em;
+                                border-color: #80B950;
+                                color: #80B950;
+                              }
+
+                              #Motto{
+                                padding: 1em;
+                                padding-top: 2.5em;
+                                font-family: FuturaPTExtraBold;
+                                font-size: 40px;
+                                color: white;
+                              }
+
+                              #Motto2{
+                                padding: 1em;
+                                padding-top: 2.5em;
+                                font-family: FuturaPTExtraBold;
+                                font-size: 40px;
+                                color: white;
+                                display:none;
+                              }
+
+                              fieldset{
+                                border: none;
+                              }
+
+                              label{
+                                text-align: center;
+                                width: 5em;
+                                padding:.5em;
+                                margin-left: 4em;
+                                float: left;
+                                font-family: FuturaPTBold;
+                                font-size: 1em;
+                                color: white;
+                                background-color: #80B950;
+                                border-top-left-radius: .5em;
+                                border-bottom-left-radius: .5em;
+                              }
+
+                              input{
+                                width: 15em;
+                                padding: .5em;
+                                float: left;
+                                font-family: FuturaPTMedium;
+                                font-size:1em;
+                                color: #80B950;
+                                border-top-right-radius: .5em;
+                                border-bottom-right-radius: .5em;
+                                border-style: none;
+                                border-color: white;
+                              }
+
+                              button{
+                                text-align: center;
+                                width: 7em;
+                                padding:.5em;
+                                margin-left: 5.60em;
+                                float: left;
+                                font-family: FuturaPTBold;
+                                font-size: 1em;
+                                color: white;
+                                background-color: #7F7F7F;
+                                border-color: white;
+                                border-radius:.5em;
+                                border-style: none;
+                                transition-duration: 0.4s;
+                              }
+
+                              button:hover {
+                                background-color: #9F9F9F;
+                                color: white;
+                                cursor: pointer;
+                              }
+
+                              button.active{
+                                background-color: #80B950;
+                                cursor:not-allowed;
+                              }
+
+                              button:focus{
+                                outline: none;
+                              }
+
+                              input:focus{
+                                outline: none;
+                              }
+
+                              #agirlikNumara, #uzunlukNumara, #enNumara, #yukseklikNumara{
+                                width: 6em;
+                                margin-left: 5.60em;
+                                padding: .5em;
+                                float: left;
+                                font-family: FuturaPTMedium;
+                                font-size:1em;
+                                color: #80B950;
+                                border-radius: .5em;
+                                border-style: none;
+                                border-color: white;
+                              }
+
+                              button2{
+                                text-align: center;
+                                width: 5em;
+                                padding:.5em;
+                                margin-left: 4em;
+                                float: left;
+                                font-family: FuturaPTBold;
+                                font-size: 1em;
+                                color: white;
+                                background-color: #7F7F7F;
+                                border-color: white;
+                                border-top-left-radius: .5em;
+                                border-bottom-left-radius: .5em;
+                                border-style: none;
+                                transition-duration: 0.4s;
+                              }
+
+                              button2:hover{
+                                background-color: #9F9F9F;
+                                color: white;
+                                cursor: pointer;
+                              }
+
+                              b{
+                                padding: .5em;
+                                font-family: FuturaPTBold;
+                                font-size: 25px;
+                                color: white;
+                              }
+
+                              .taglines{
+                                margin-left: 14em;
+                                margin-top: 2em;
+                                display: inline-block;
+                              }
+
+                              .taglines li{
+                                display: inline;
+                                margin: auto;
+                                list-style: none;
+                                margin-top: 2.5em;
+                                font-family: FuturaPTBold;
+                                font-size: 2em;
+                                color: white;
+                              }
+
+                              .taglines li2{
+                                display: inline;
+                                list-style: none;
+                                margin-top: 2.5em;
+                                margin-left: 2em;
+                                font-family: FuturaPTLight;
+                                color: white;
+                                text-align: right;
+                              }
+
+                              .taglines p{
+                                font-size: .4em;
+                                float: left;
+                                list-style: none;
+                                font-family: FuturaPTMedium;
+                                color: white;
+                              }
+
+                              .cardcontainer{
+                                margin-top: 5em;
+                                display: flex;
+                                padding-left: 2em;
+                                padding-right: 2em;
+                              }
+
+                              .card{
+                                border-style:solid;
+                                box-shadow: 3px 3px 5px #7F7F7F;
+                                border-radius: .5em;
+                                border-color: #80B950;
+                                width: 20em;
+                                padding: 2em;
+                                margin: 2em;
+                                text-align: center;
+                              }
+
+                              .card li{
+                                font-family: FuturaPTBold;
+                                color: #80B950;
+                                list-style: none;
+                                font-size: 25px;
+                                padding-bottom: .5em;
+                              }
+
+                              .card li2{
+                                font-family: FuturaPTMedium;
+                                color: #7F7F7F;
+                                text-align: center;
+                                font-size: 18px;
+                              }
+
+                              .companybreakdown1{
+                                padding: 2em;
+                                padding-top: 5em;
+                                padding-right: 0em;
+                                width: 50%;
+                                display: inline-block;
+                              }
+
+                              .companybreakdown2{
+                                padding-bottom: 3em;
+                                width: auto;
+                                display: inline-block;
+                              }
+
+                              .companybreakdown3{
+                                padding: 2em;
+                                padding-top: 4em;
+                                padding-right: 0em;
+                                padding-bottom: 7em;
+                                width: 50%;
+                                display: inline-block;
+                              }
+
+                              .footer{
+                                display: flex;
+                                margin-top: 8em;
+                                width: auto;
+                                height: 6em;
+                                align-items: center;
+                                font-family: FuturaPTDemi;
+                                font-size: 15px;
+                                background-color: #80B950;
+                              }
+
+                              #ecotech{
+                                padding-left: 1em;
+                                height: 20em;
+                                width: auto;
+                                overflow:visible;
+                                margin-top: -9em;
+                                margin-bottom: -12em;
+                                margin-left: -4em;
+                              }
+
+                              #econcept{
+                                padding-left: 1em;
+                                height: 20em;
+                                width: auto;
+                                overflow:visible;
+                                margin-top: -9em;
+                                margin-bottom: -12em;
+                                margin-left: -4em;
+                              }
+
+                              #ecofleet{
+                                padding-left: 1em;
+                                height: 20em;
+                                width: auto;
+                                overflow:visible;
+                                margin-top: -9em;
+                                margin-bottom: -12em;
+                                margin-left: -4em;
+                              }
+
+                              p{
+                                font-family: FuturaPTBold;
+                                color: #80B950;
+                                font-size: 30px;
+                                width: auto;
+                                padding-top: 1.5em;
+                              }
+
+                              p2{
+                                font-family: FuturaPTDemi;
+                                color: #80B950;
+                                font-size: 16px;
+                              }
+
+                              #image1{
+                                display: inline-flex;
+                                float: right;
+                                padding-top: 6em;
+                                padding-right: 0;
+                                width: 40em;
+                                height: auto;
+                              }
+
+                              #image2{
+                                display: inline-flex;
+                                float: left;
+                                padding-top: 4em;
+                                padding-left: 0;
+                                width: 40em;
+                                height: auto;
+                              }
+
+                              #image3{
+                                display: inline-flex;
+                                float: right;
+                                padding-top: 4em;
+                                padding-right: 0;
+                                width: 40em;
+                                height: auto;
+                              }
+
+                              #endingtagline{
+                                display: inline-block;
+                                padding-top: 1em;
+                                text-align: center;
+                                margin: auto;
+                                align-items: center;
+                                width: 100%;
+                                font-family: FuturaPTExtraBold;
+                                font-size: 40px;
+                                color: #80B950;
+                              }
+
+                              #return{
+                                display: inline;
+                                background-color: grey;
+                                height: 6em;
+                                width: 20em;
+                                margin-right: 0 !important;
+                                text-align: center;
+                                transition: 4s ease-in-out;
+                              }
+
+                              #returnarrow{
+                                width: auto;
+                                height: auto;
+                                position: relative;
+                                top: 40%;
+                              }
+
+                              #footerlogo{
+                                height: 6em;
+                                width: 20%;
+                                overflow: hidden;
+                                position: relative;
+                                background-color: white;
+                                object-fit:cover;
+                              }
+
+                              nav2{
+                                width: 100%;
+                                padding-left: 14em;
+                                display: inline-flex;
+                                align-items: center;
+                              }
+                              nav2 li2{
+                                font-family: FuturaPTDemi;
+                                font-size: 14px;
+                                color: white;
+                                padding-right: 9em;
+                              }
+                            }
