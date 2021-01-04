@@ -224,7 +224,7 @@ b{
 }
 
 .taglines{
-  margin-left: 19em;
+  margin-left: 10em;
   margin-top: 10em;
   display: inline-block;
 }
@@ -303,7 +303,7 @@ b{
   padding-bottom: 3em;
   float: right;
   clear: right;
-  max-width: 50%;
+  max-width: 48%;
 }
 
 .companybreakdown3{
@@ -639,7 +639,7 @@ nav2 li2{
                               }
 
                               .taglines{
-                                margin-left: 14em;
+                                margin-left: 12em;
                                 margin-top: 2em;
                                 display: inline-block;
                               }
@@ -715,7 +715,7 @@ nav2 li2{
 
                               .companybreakdown2{
                                 padding-bottom: 3em;
-                                width: 50%;
+                                width: 48%;
                                 display: inline-block;
                               }
 
